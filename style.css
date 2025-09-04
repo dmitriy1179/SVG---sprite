@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #16133D
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+header {
+  height: 80px;
+  padding-block: 22.5px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 12px;
+  }
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+section {
+  padding-block: 100px;
+
+  span {
+    line-height: 21px;
+    color: #7690A8;
+    padding-left: 3px;
+  }
+
+  h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    padding: 15px 0 40px 3px;
+  }
+
+  ul {
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    li {
+      border: 1px solid #007FFC;
+      border-radius: 8px;
+      padding: 40px;
+      transition: .3s;
+
+      div {
+        display: grid;
+        padding: 14px 14px 14px 13px;
+
+        img {
+          grid-row: 1 / -1;
+          grid-column: 1 / -1;
+          transition: .3s;
+        }
+      }
+
+      &:hover {
+        border-color: #52C29D;
+
+        img:last-child {
+          opacity: 0;
+        }
+      }
+
+      h3 {
+        padding-top: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 21.3px;
+      }
+
+      p {
+        line-height: 28px;
+        padding-block: 15px 30px;
+      }
+
+      a {
+        color: #3DB370;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #16133d;
+
+  div {
+    padding-block: 28px 52px;
+
+    >a {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-weight: 500;
+        font-family: "Quicksand", sans-serif;
+        color: #fff;
+        font-size: 35px;
+        line-height: 35px;
+        padding-left: 12px;
+      }
+    }
+  }
+
+  ul {
+    gap: 10px;
+    grid-template-columns: repeat(5, 38px);
+    padding-top: 40px;
+
+    li {
+      width: 38px;
+      height: 38px;
+      background-color: #fff;
+      border-radius: 8px;
+      transition: .3s;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &:hover {
+        background-color: #7690A8;
+      }
+    }
+  }
+}
